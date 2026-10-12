@@ -1,0 +1,12 @@
+numpy
+pandas
+networkx
+osmnx
+matplotlib
+shapely
+tqdm
+h5py
+geopandas
+pyproj
+ipykernel
+pyarrow
