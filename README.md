@@ -6,9 +6,9 @@ This repository contains a network-science-driven, systematic analysis of road n
 
 - **Topological Centrality & Shortest-Path Dynamics:** Modeling the NRW motorway system as a directed graph using OpenStreetMap (OSM) data and evaluating node relevance ($Z_i$) via all-pairs Dijkstra shortest-path routing (`travel_time`) between motorway junctions.
 
-- **Spatial Constraints & Structural Robustness:** Investigating the stability of normalized centrality distributions ($\tilde{Z}_i = Z_i / \langle Z_i \rangle$) under spatial filtering (e.g., long-distance transit routes $\ge 10\text{ km}$, $\tilde{Z}_i^{\mathrm{(Dist)}}$), demographic weighting ($\tilde{Z}_i^{\mathrm{(Pop)}}$), and subordinate road network integration ($\tilde{Z}_i^{\mathrm{(Road)}}$).
+- **Spatial Constraints & Structural Robustness:** Investigating the stability of normalized centrality distributions ($\tilde{Z}_i = Z_i / \langle Z_i \rangle$) under spatial filtering (e.g., long-distance transit routes $\ge 30\text{ km}$, $\tilde{Z}_i^{\mathrm{(Dist)}}$), demographic weighting ($\tilde{Z}_i^{\mathrm{(Pop)}}$), and subordinate road network integration ($\tilde{Z}_i^{\mathrm{(Road)}}$).
 
-- **Empirical Time-Series Aggregation:** Processing high-resolution loop detector measurements ($Q_i$ in vehicles/minute) from an HDF5 database over a full 12-month period, accounting for weekday regimes, public holidays, school vacations, daytime windows (07:00–19:00), and data-completeness thresholds.
+- **Empirical Time-Series Aggregation:** Processing high-resolution loop detector measurements ($Q_i$ in vehicles/minute) from an HDF5 database over a full 12-month period.
 
 - **Structural Load vs. Parallel Redundancy:** Quantifying the linear relationship ($r = 0.52$) between theoretical network centrality and actual traffic volume, identifying how dense metropolitan network clusters distribute empirical load across parallel relief corridors (e.g., vs. the primary SW–NE axis of the A1).
 
